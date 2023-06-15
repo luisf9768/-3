@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Página de ejemplo</title>
+    <style>
+        body {
+            background-color: navy;
+            color: white;
+        }
+        
+        .button {
+            background-color: #333;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            display: inline-block;
+            font-size: 16px;
+            cursor: pointer;
+            margin: 5px;
+        }
+        
+        .button:hover {
+            background-color: #555;
+        }
+        
+        .textbox {
+            display: none;
+            margin-top: 20px;
+        }
+    </style>
+    <script>
+        function showTextBox1() {
+            document.getElementById('textbox1').style.display = 'block';
+            document.getElementById('textbox2').style.display = 'none';
+            document.getElementById('textbox3').style.display = 'none';
+        }
+        
+        function showTextBox2() {
+            document.getElementById('textbox1').style.display = 'none';
+            document.getElementById('textbox2').style.display = 'block';
+            document.getElementById('textbox3').style.display = 'none';
+        }
+        
+        function showTextBox3() {
+            document.getElementById('textbox1').style.display = 'none';
+            document.getElementById('textbox2').style.display = 'none';
+            document.getElementById('textbox3').style.display = 'block';
+        }
+        
+        function showTextBox4() {
+            document.getElementById('textbox4').style.display = 'block';
+            document.getElementById('textbox5').style.display = 'none';
+        }
+        
+        function showTextBox5() {
+            document.getElementById('textbox4').style.display = 'none';
+            document.getElementById('textbox5').style.display = 'block';
+        }
+    </script>
+</head>
+<body>
+    <h1>Si algo te molestó, ¿serías tan amable de perdonarme? 👉👈</h1>
+    
+    <button class="button" onclick="showTextBox1()">SI</button>
+    <button class="button" onclick="showTextBox2()">NO</button>
+    <button class="button" onclick="showTextBox3()">ES QUE NO ES POR ALGO TUYO</button>
+    
+    <div id="textbox1" class="textbox">
+        <p>Muchas gracias por entenderme, te quiero ❤️‍🩹</p>
+    </div>
+    
+    <div id="textbox2" class="textbox">
+        <p>Ándaleeeeee, escoge el botón de SI😔</p>
+    </div>
+    
+    <div id="textbox3" class="textbox">
+        <p>Te puedo ayudar en algo🫶🥺?</p>
+        <button class="button" onclick="showTextBox4()">SI</button>
+        <button class="button" onclick="showTextBox5()">NO</button>
+    </div>
+    
+    <div id="textbox4" class="textbox">
+        <p>somos un equipo y vamos a resolver cualquier cosa🫶</p>
+    </div>
+    
+    <div id="textbox5" class="textbox">
+        <p>Sabes que cuentas conmigo para lo que sea, si quieres que solo te escuche vamos por papitas y platicamos😋</p>
+    </div>
+</body>
+</html>
